@@ -2,6 +2,7 @@
 :root {
   --primary-color: #005f73;      /* Deep River Blue */
   --accent1-color: #0a9396;      /* Teal/Water Accent */
+  --accent2-color: #e9c46a;      /* Sand/Earth Accent */
   --secondary-color: #94d2bd;    /* Light Foam Green */
   --body-font: 'Arial', sans-serif;
   --heading-font: 'Georgia', serif;
@@ -42,6 +43,12 @@ nav, p, section, article {
 /* 7. Remove underlines from social media image links */
 .socialmedia a {
   text-decoration: none;
+}
+
+.socialmedia a img {
+  width: 30px; /* Resizes the footer icons to be small */
+  height: auto;
+  margin: 0 5px; /* Adds a little breathing room between icons */
 }
 
 /* 8. Position hero relative */
