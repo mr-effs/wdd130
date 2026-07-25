@@ -1,9 +1,9 @@
 /* 1. Define CSS variables */
 :root {
-  --primary-color: #005f73;      /* Deep River Blue */
-  --accent1-color: #0a9396;      /* Teal/Water Accent */
+  --primary-color: #004351;      /* Deep River Blue */
+  --accent1-color: #087f82;      /* Teal/Water Accent */
   --accent2-color: #e9c46a;      /* Sand/Earth Accent */
-  --secondary-color: #94d2bd;    /* Light Foam Green */
+  --secondary-color: #a8dadc;    /* Light Foam Green */
   --body-font: 'Arial', sans-serif;
   --heading-font: 'Georgia', serif;
 }
