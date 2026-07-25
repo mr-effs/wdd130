@@ -2,7 +2,7 @@
 :root {
   --primary-color: #005f73;      /* Deep River Blue */
   --accent1-color: #0a9396;      /* Teal/Water Accent */
-  --accent2-color: #e9c46a;      /* Sand/Earth Accent (New) */
+  --accent2-color: #e9c46a;      /* Sand/Earth Accent */
   --secondary-color: #94d2bd;    /* Light Foam Green */
   --body-font: 'Arial', sans-serif;
   --heading-font: 'Georgia', serif;
@@ -28,36 +28,86 @@ header, main, footer {
   margin: 0 auto;
 }
 
+/* Header layout using CSS Grid & Logo sizing */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+header img {
+  width: 80px;
+  height: auto;
+}
+
+/* Navigation layout using CSS Flex */
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+header nav a {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+header nav a:hover {
+  color: var(--accent2-color);
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
+
 /* 5. Style headings */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-/* 6. Consistent spacing for structural elements */
-nav, p, section, article {
+/* 6. Consistent spacing */
+p, section, article {
   margin: 16px;
   padding: 8px;
 }
 
-/* 7. Remove underlines from social media image links */
+/* 7. Footer layout with right-aligned social media */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  margin-top: 20px;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 15px;
+}
+
 .socialmedia a {
   text-decoration: none;
 }
 
 .socialmedia a img {
-  width: 30px; 
+  width: 30px;
   height: auto;
-  border: 2px solid var(--accent2-color); /* Putting accent2 in use */
+  border: 2px solid var(--accent2-color);
   border-radius: 5px;
 }
 
-/* 8. Position hero relative */
+/* 8 & 9. Position hero */
 .hero {
   position: relative;
 }
 
-/* 9. Hero image styling */
 .hero img {
   display: block;
   width: 100%;
@@ -76,17 +126,17 @@ nav, p, section, article {
   color: #fff;
 }
 
-/* 11. Style the article using absolute positioning */
+/* 11. Article positioning */
 .hero article {
   position: absolute;
   bottom: 20px;
-  background-color: var(--secondary-color); /* Putting secondary color in use */
-  border: 2px solid var(--accent2-color);   /* Putting accent2 in use */
+  background-color: var(--secondary-color);
+  border: 2px solid var(--accent2-color);
   margin: 20px;
   border-radius: 8px;
 }
 
-/* 12. Style image inside the article */
+/* 12. Article image */
 .hero article img {
   float: right;
   width: 125px;
@@ -94,13 +144,63 @@ nav, p, section, article {
   border: 2px solid var(--primary-color);
 }
 
-/* 13. Added: Styling nav links for better theme integration */
-nav a {
-  color: var(--accent1-color);
-  font-weight: bold;
-  text-decoration: none;
+/* History Section Wireframe Layout */
+.history-section {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
 }
 
-nav a:hover {
-  color: var(--accent2-color);
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  align-items: center;
+}
+
+.history-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 2px solid var(--primary-color);
+}
+
+/* Adventures Section Layout (Flexbox for 5 horizontal items) */
+.adventures-section {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.adventures-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.adventures-grid figure {
+  flex: 1;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--secondary-color);
+}
+
+.adventures-grid img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.adventures-grid figcaption {
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-top: 6px;
+  color: var(--primary-color);
 }
