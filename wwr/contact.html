@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Effz Rafting</title>
+    <meta name="description" content="Get in touch with Effz Rafting. Find our address, phone number, email, map, and send us inquiries or reservation questions.">
+    <meta name="author" content="Frederick Effah">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/rafting_logo.png" alt="White Water Rafting Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Company Information Header Section -->
+        <section class="company-info-section">
+            <h1>White Water Rafting Company</h1>
+            <p>123 Main River Street<br>
+            Kolob, California<br>
+            +1 999 999 9999<br>
+            info@whitewater.com</p>
+        </section>
+
+        <!-- Map and Form Section (Grid Layout) -->
+        <section class="contact-grid-section">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537363153169!3d-37.81627974202166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577ddef35f4ea6!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1614000000000!5m2!1sen!2sus" 
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="form-container">
+                <form action="#" method="post">
+                    <h2>Send Us a Message</h2>
+                    
+                    <div class="form-item">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+
+                    <fieldset class="form-item">
+                        <legend>Message Purpose</legend>
+                        <label><input type="radio" name="purpose" value="general" checked> General Inquiry</label>
+                        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                    </fieldset>
+
+                    <div class="form-item">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Type here..." required></textarea>
+                    </div>
+
+                    <div class="form-item checkbox-item">
+                        <label>
+                            <input type="checkbox" name="newsletter" value="subscribed"> Please subscribe me to the monthly newsletter
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Get in Touch!</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Employee Profiles Section -->
+        <section class="employees-section">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-grid">
+                <figure>
+                    <img src="images/employee1.webp" alt="Lead Guide Profile">
+                    <figcaption>Esther Smith - Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.webp" alt="Safety Coordinator Profile">
+                    <figcaption>Jane Smith - Safety Coordinator</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.webp" alt="Customer Relations Profile">
+                    <figcaption>Mark Johnson - Customer Relations</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©2026 - Effz Rafting - Frederick Effah</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook-bw.svg" alt="Facebook Icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram-bw.svg" alt="instagram Icon">
+            </a>
+            <a href="https://youtube.com">
+                <img src="images/youtube-bw.svg" alt="YouTube Icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
